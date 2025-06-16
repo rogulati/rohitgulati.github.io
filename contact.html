@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Rohit Gulati</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">
+                    <h1>Rohit Gulati</h1>
+                    <p>Identity, Security & Cloud Expert | Enterprise Growth & Strategy | Speaker & Advisor | Customer Success & GTM Leader</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#resume">Professional Summary</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="in-news.html">In News</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-section">
+                <h2>Get in Touch</h2>
+                <p>Have a question or want to connect? Feel free to reach out using the form below.</p>
+                
+                <form id="contactForm" class="contact-form" onsubmit="sendEmail(event)">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            // Create mailto link with form data
+            const mailtoLink = `mailto:rohitgulati@outlook.com?subject=Contact Form Submission from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AMessage:%0D%0A${message}`;
+            
+            // Open default email client
+            window.location.href = mailtoLink;
+            
+            // Clear form
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>

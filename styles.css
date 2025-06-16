@@ -148,6 +148,165 @@ main {
     background-color: #4ecdc4;
 }
 
+/* Contact Form Styles */
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-section p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #4ecdc4;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-submit:hover {
+    background-color: #45b8b0;
+}
+
+nav a.active {
+    color: #4ecdc4;
+    font-weight: 600;
+}
+
+/* Portfolio Styles */
+.portfolio-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.portfolio-block {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.portfolio-block h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #f5a623;
+    border-bottom: 2px solid #f5f5f5;
+    padding-bottom: 10px;
+}
+
+/* Experience Items */
+.experience-item, .education-item, .certification-item {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.experience-item:last-child, .education-item:last-child, .certification-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.experience-item h4, .education-item h4, .certification-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.company, .degree, .issuer {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.duration, .location, .issued-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    background-color: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #666;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background-color: #f5a623;
+    color: white;
+    border-color: #f5a623;
+}
+
 /* Responsive Styles */
 @media (max-width: 992px) {
     .profile-section {
@@ -183,6 +342,26 @@ main {
     
     .intro-content h2 {
         font-size: 48px;
+    }
+
+    .portfolio-section {
+        padding: 20px;
+    }
+
+    .portfolio-block {
+        padding: 20px;
+    }
+
+    .portfolio-section h2 {
+        font-size: 28px;
+    }
+
+    .portfolio-block h3 {
+        font-size: 20px;
+    }
+
+    .experience-item h4, .education-item h4, .certification-item h4 {
+        font-size: 16px;
     }
 }
 
